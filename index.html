@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="img/favicon.webp" type="image/x-icon">
+    <img src="img/edited/gate.webp" alt="gate" style="display: none;">
+    <title>u1trav101et</title>
+</head>
+<body>
+    <img class="bg-gif" src="img/background.gif" alt="background gif">
+    <main>
+        <section>
+            <div class="gate" onmouseover="gateHover();" onmouseout="gateUnhover();">
+                <img id="gate-image" src="img/original/gate.webp" alt="gate">
+                <h1 id="gate-caption">you want me dead don't you?</h1>
+            </div>
+            <div class="heroin">
+                <h3>b i n a r y h e r o i n</h3>
+            </div>
+        </section>
+        <p class="marquee">
+            <span id="marquee-text">ultraviolet</span>
+        </p>
+        <aside>
+            <div class="poem">
+                <div data-text="to see is to consume" class="glitch">
+                    to see is to consume
+                </div>
+                <div data-text="to feed is to breathe" class="glitch">
+                    to feed is to breathe
+                </div>
+                <div data-text="to see is to feel" class="glitch">
+                    to see is to feel
+                </div>
+                <div data-text="to feed is to breathe" class="glitch">
+                    to feed is to breathe
+                </div>
+            </div>
+            <img class="horizon" src="img/edited/horizon.gif" alt="horizon">
+        </aside>
+        <nav>
+            <ul>
+                <li><a href="#">gallery</a></li>
+                <li><a href="#">writings</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+            <span>Copyright © 2024 u1trav101et. All rights reserved.</span>
+        </nav>
+    </main>
+</body>
+<script>
+    const gateImage = document.getElementById("gate-image");
+    const gateCaption = document.getElementById("gate-caption");
+    const marqueeText = document.getElementById("marquee-text");
+
+    const gateHover = () => {
+        gateImage.setAttribute("src", "img/edited/gate.webp");
+        gateImage.classList.toggle("image-flipped");
+        gateCaption.classList.toggle("caption-flipped");
+        marqueeText.getAnimations()[0].reverse();
+    }
+
+    const gateUnhover = () => {
+        gateImage.setAttribute("src", "img/original/gate.webp");
+        gateImage.classList.toggle("image-flipped");
+        gateCaption.classList.toggle("caption-flipped");
+        marqueeText.getAnimations()[0].reverse();
+    }
+</script>
+</html>

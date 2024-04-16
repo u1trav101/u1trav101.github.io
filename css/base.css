@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "merchant-copy";
+    src: url("../ttf/merchant_copy.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "apple-garamond";
+    src: url("../ttf/apple_garamond.ttf") format("truetype");
+}
+
+html {
+    background-color: #18012D;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+    font-family: "merchant-copy";
+    color: #fefefe;
+}
+
+.bg-gif {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    opacity: 8%;
+    z-index: -9999;
+}
