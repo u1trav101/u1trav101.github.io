@@ -1,116 +1,132 @@
 main {
-    display: flex;
-    height: 100%;
+  display: flex;
+  height: 100vh;
 }
 
 main section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .gate {
-    margin: 100px 0 0 100px;
-    width: fit-content;
-    height: min-content;
+  margin: 100px 0 0 100px;
+  width: fit-content;
+  height: min-content;
 
-    cursor: help;
+  cursor: help;
 }
 
 .gate img {
-    width: 700px;
-    margin-bottom: -22px;
+  width: 700px;
+  margin-bottom: -22px;
 }
 
 .gate h1 {
-    margin: 0;
+  margin: 0;
 }
 
 .heroin {
-    display: flex;
+  display: flex;
+  height: 100%;
 }
 
 .heroin h3 {
-    margin: 0 0 150px 150px;
-    width: fit-content;
-    font-size: 4rem;
-    text-wrap: nowrap;
+  margin: 100px 0 auto 150px;
+  width: fit-content;
+  font-size: 4rem;
+  text-wrap: nowrap;
 
-    font-weight: 100;
-    font-family: "apple-garamond";
-    background-color: black;
-    animation: red-glow 5s alternate infinite;
+  font-weight: 100;
+  font-family: "apple-garamond";
+  background-color: black;
+  animation: red-glow 5s alternate infinite;
 }
 
 @keyframes red-glow {
-    0%, 50% {
-        background-color: black;
-    }
-    51%, 100% {
-        background-color: #3C0202;
-    }
+
+  0%,
+  50% {
+    background-color: black;
+  }
+
+  51%,
+  100% {
+    background-color: #3C0202;
+  }
 }
 
 .image-flipped {
-    margin-bottom: -525px;
+  margin-bottom: -525px;
 }
 
 .caption-flipped {
-    transform: scale(1, -1);
+  transform: scale(1, -1);
 
-    text-align: right;
+  text-align: right;
 }
 
 main .marquee {
-    position: absolute;
-    height: 100%;
+  position: absolute;
+  height: 100%;
 }
 
 main .marquee span {
-    position: fixed;
-    font-size: 3rem;
-    height: 100%;
+  position: fixed;
+  font-size: 3rem;
+  height: 100%;
 
-    writing-mode: vertical-lr;
-    text-orientation: upright;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
 
-  
-    /* show the marquee just outside the paragraph */
-    will-change: transform;
-    animation: marquee 15s linear infinite forwards;
+
+  /* show the marquee just outside the paragraph */
+  will-change: transform;
+  animation: marquee 15s linear infinite forwards;
 }
 
 .marquee-reversed {
-    animation: marquee-reversed 15s linear infinite forwards;
+  animation: marquee-reversed 15s linear infinite forwards;
 }
 
 @keyframes marquee {
-    0% { transform: translate(0, 100%); }
-    100% { transform: translate(0,-100%); }
+  0% {
+    transform: translate(0, 100%);
+  }
+
+  100% {
+    transform: translate(0, -100%);
+  }
 }
 
 @keyframes marquee-reversed {
-    0% { transform: translate(0, -100%); }
-    100% { transform: translate(0, 100%); }
+  0% {
+    transform: translate(0, -100%);
+  }
+
+  100% {
+    transform: translate(0, 100%);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .marquee span {
-      animation-iteration-count: 1;
-      animation-duration: 0.01; 
-      width: auto;
-      padding-left: 0;
-    }
+  .marquee span {
+    animation-iteration-count: 1;
+    animation-duration: 0.01;
+    width: auto;
+    padding-left: 0;
+  }
 }
 
 aside {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
+
 .poem {
-    text-wrap: nowrap;
+  text-wrap: nowrap;
 }
 
 .glitch {
@@ -124,63 +140,83 @@ aside {
   0% {
     clip: rect(48px, 9999px, 38px, 0);
   }
+
   5% {
     clip: rect(8px, 9999px, 63px, 0);
   }
+
   10% {
     clip: rect(70px, 9999px, 11px, 0);
   }
+
   15% {
     clip: rect(32px, 9999px, 5px, 0);
   }
+
   20% {
     clip: rect(27px, 9999px, 14px, 0);
   }
+
   25% {
     clip: rect(80px, 9999px, 24px, 0);
   }
+
   30% {
     clip: rect(77px, 9999px, 5px, 0);
   }
+
   35% {
     clip: rect(85px, 9999px, 65px, 0);
   }
+
   40% {
     clip: rect(21px, 9999px, 68px, 0);
   }
+
   45% {
     clip: rect(36px, 9999px, 41px, 0);
   }
+
   50% {
     clip: rect(70px, 9999px, 55px, 0);
   }
+
   55% {
     clip: rect(67px, 9999px, 67px, 0);
   }
+
   60% {
     clip: rect(60px, 9999px, 12px, 0);
   }
+
   65% {
     clip: rect(16px, 9999px, 50px, 0);
   }
+
   70% {
     clip: rect(39px, 9999px, 7px, 0);
   }
+
   75% {
     clip: rect(95px, 9999px, 25px, 0);
   }
+
   80% {
     clip: rect(20px, 9999px, 83px, 0);
   }
+
   85% {
     clip: rect(92px, 9999px, 12px, 0);
   }
+
   90% {
     clip: rect(56px, 9999px, 37px, 0);
   }
+
   95% {
     clip: rect(15px, 9999px, 21px, 0);
   }
+
   100% {
     clip: rect(41px, 9999px, 71px, 0);
   }
@@ -202,63 +238,83 @@ aside {
   0% {
     clip: rect(18px, 9999px, 5px, 0);
   }
+
   5% {
     clip: rect(42px, 9999px, 17px, 0);
   }
+
   10% {
     clip: rect(79px, 9999px, 87px, 0);
   }
+
   15% {
     clip: rect(85px, 9999px, 64px, 0);
   }
+
   20% {
     clip: rect(50px, 9999px, 19px, 0);
   }
+
   25% {
     clip: rect(57px, 9999px, 69px, 0);
   }
+
   30% {
     clip: rect(30px, 9999px, 91px, 0);
   }
+
   35% {
     clip: rect(26px, 9999px, 30px, 0);
   }
+
   40% {
     clip: rect(48px, 9999px, 91px, 0);
   }
+
   45% {
     clip: rect(57px, 9999px, 64px, 0);
   }
+
   50% {
     clip: rect(18px, 9999px, 55px, 0);
   }
+
   55% {
     clip: rect(51px, 9999px, 42px, 0);
   }
+
   60% {
     clip: rect(52px, 9999px, 51px, 0);
   }
+
   65% {
     clip: rect(59px, 9999px, 41px, 0);
   }
+
   70% {
     clip: rect(79px, 9999px, 59px, 0);
   }
+
   75% {
     clip: rect(86px, 9999px, 55px, 0);
   }
+
   80% {
     clip: rect(100px, 9999px, 95px, 0);
   }
+
   85% {
     clip: rect(99px, 9999px, 98px, 0);
   }
+
   90% {
     clip: rect(68px, 9999px, 76px, 0);
   }
+
   95% {
     clip: rect(62px, 9999px, 48px, 0);
   }
+
   100% {
     clip: rect(81px, 9999px, 23px, 0);
   }
@@ -277,30 +333,203 @@ aside {
 }
 
 .horizon {
-    margin: 50px 0 0 100px;
+  margin: 50px 0 0 100px;
 }
 
 nav {
-    margin: 30px 50px 0 auto
+  margin: 30px 50px 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 nav ul li {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 
-    list-style: none;
-}
-
-nav ul li a {
-    all: unset;
-    cursor: pointer;
-    font-size: 2.5rem;
-
-    border-bottom: 1px solid #fefefe;
+  list-style: none;
+  text-align: right;
 }
 
 nav span {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    text-wrap: nowrap;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-wrap: nowrap;
+
+  color: grey;
+}
+
+
+@media only screen and (max-width: 1600px) {
+  .gate img {
+    width: 550px;
+  }
+
+  .poem {
+    margin-left: 70px;
+  }
+
+  .poem .glitch{
+    font-size: 3rem;
+  }
+
+  .horizon {
+    width: 400px;
+    margin: 0 0 0 50px;
+  }
+
+  .heroin h3 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .gate img {
+    width: 400px;
+  }
+
+  .horizon {
+    width: 300px;
+    margin-bottom: 200px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  main {
+    flex-wrap: wrap;
+  }
+
+  main section {
+    justify-content: unset;
+  }
+
+  .heroin, aside {
+    height: unset;
+  }
+
+  .horizon {
+    margin-bottom: 0;
+  }
+
+  nav {
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  nav ul li {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  main {
+    align-items: unset;
+  }
+
+  main section {
+    flex-direction: row;
+    height: min-content;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .gate {
+    margin: 80px 0 0;
+  }
+
+  aside {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .poem {
+    margin: 0;
+  }
+
+  .horizon {
+    margin: 0;
+    width: 200px;
+  }
+
+  .heroin h3 {
+    writing-mode: vertical-lr;
+    text-orientation: sideways-right;
+    margin: 80px 0 0 50px;
+    height: fit-content;
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .poem .glitch {
+    font-size: 2rem;
+    width: fit-content;
+    margin: 0 auto 0 0;
+  }
+
+  .gate img {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .heroin h3 {
+    margin: 40px 0 0;
+  }
+
+  .gate img {
+    width: 250px;
+  }
+
+  .poem {
+    display: flex;
+    height: fit-content;
+    margin: auto 0;
+    flex-direction: row;
+
+    transform: scale(-1);
+  }
+
+  .poem .glitch {
+    writing-mode: vertical-rl;
+    text-orientation:sideways-right;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  main section, aside, .poem {
+    flex-direction: column;
+  }
+
+  .gate {
+    margin: 20px 0 0 auto;
+  }
+
+  .gate h1 {
+    text-align: right;
+  }
+
+  .heroin h3, .poem .glitch {
+    writing-mode: unset;
+    text-orientation: unset;
+  }
+
+  .heroin h3 {
+    font-size: 2rem;
+    margin: 20px 0 20px auto;
+  }
+
+  .poem .glitch {
+    transform: scale(-1);
+  }
+
+  .horizon {
+    margin: 20px 0 0 auto;
+    width: 250px;
+  }
+
+  nav span {
+    bottom: unset;
+    margin-top: 100%;
+    font-size: smaller;
+  }
 }

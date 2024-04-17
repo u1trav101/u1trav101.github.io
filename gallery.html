@@ -4,10 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/gallery.css">
     <link rel="shortcut icon" href="img/favicon.webp" type="image/x-icon">
     <title>u1trav101et</title>
 </head>
 <body>
-    
+    <img class="bg-gif" src="img/background.gif" alt="background gif">
+    <main>
+        <h1 class="return"><a href="index.html"><-- return</a></h1>
+        <div class="photos">
+            <div>
+                <h2>path</h2>
+                <a href="img/edited/path.gif" target="_blank" rel="noreferrer noopener">
+                    <img src="img/edited/path.gif" alt="path">
+                </a>
+                <span>02/05/2023 - shot on iPhone SE (2nd gen)</span>
+            </div>
+            <div>
+                <h2>horizon</h2>
+                <a href="img/edited/horizon.gif" target="_blank" rel="noreferrer noopener">
+                    <img src="img/edited/horizon.gif" alt="horizon">
+                </a>
+                <span>02/05/2023 - shot on iPhone SE (2nd gen)</span>
+            </div>
+            <div>
+                <h2>gate</h2>
+                <a href="img/edited/gate.webp" target="_blank" rel="noreferrer noopener">
+                    <img src="img/edited/gate.webp" alt="gate">
+                </a>
+                <span>02/05/2023 - shot on iPhone SE (2nd gen)</span>
+            </div>
+            <div>
+                <h2>flame</h2>
+                <a href="img/edited/flame.webp" target="_blank" rel="noreferrer noopener">
+                    <img src="img/edited/flame.webp" alt="flame">
+                </a>
+                <span>25/03/2023 - shot on iPhone SE (2nd gen)</span>
+            </div>
+        </div>
+        <footer>
+            <span class="copyright">Copyright © 2024 u1trav101et. All rights reserved.</span>
+            <button class="scroll" onclick="scrollToTop()">scroll to top</button>
+        </footer>
+
+    </main>
 </body>
+<script>
+    const scrollToTop = () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
 </html>
