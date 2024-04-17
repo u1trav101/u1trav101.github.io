@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="shortcut icon" href="img/favicon.webp" type="image/x-icon">
-    <img src="img/edited/gate.webp" alt="gate" style="display: none;">
+    <img src="img/gallery/gate.webp" alt="gate" style="display: none;">
     <title>u1trav101et</title>
 </head>
 <body>
@@ -14,7 +14,7 @@
     <main>
         <section>
             <div class="gate" onmouseover="gateHover();" onmouseout="gateUnhover();">
-                <img id="gate-image" src="img/original/gate.webp" alt="gate">
+                <img id="gate-image" src="img/gallery/gate-unedited.webp" alt="gate">
                 <h1 id="gate-caption">you want me dead don't you?</h1>
             </div>
             <div class="heroin">
@@ -39,7 +39,7 @@
                     to feed is to breathe
                 </div>
             </div>
-            <img class="horizon" src="img/edited/horizon.gif" alt="horizon">
+            <img class="horizon" src="img/gallery/horizon-animated.gif" alt="horizon">
         </aside>
         <nav>
             <ul>
@@ -58,14 +58,14 @@
     const marqueeText = document.getElementById("marquee-text");
 
     const gateHover = () => {
-        gateImage.setAttribute("src", "img/edited/gate.webp");
+        gateImage.setAttribute("src", "img/gallery/gate.webp");
         gateImage.classList.toggle("image-flipped");
         gateCaption.classList.toggle("caption-flipped");
         marqueeText.getAnimations()[0].reverse();
     }
 
     const gateUnhover = () => {
-        gateImage.setAttribute("src", "img/original/gate.webp");
+        gateImage.setAttribute("src", "img/gallery/gate-unedited.webp");
         gateImage.classList.toggle("image-flipped");
         gateCaption.classList.toggle("caption-flipped");
         marqueeText.getAnimations()[0].reverse();
