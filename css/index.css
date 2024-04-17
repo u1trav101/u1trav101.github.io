@@ -479,19 +479,31 @@ nav span {
   .gate img {
     width: 250px;
   }
+  
+  aside {
+    justify-content: space-around;
+  }
 
   .poem {
     display: flex;
     height: fit-content;
-    margin: auto 0;
+    margin: auto 0 0 20px;
     flex-direction: row;
 
-    transform: scale(-1);
+    transform: rotate(180deg);
   }
 
   .poem .glitch {
     writing-mode: vertical-rl;
     text-orientation:sideways-right;
+  }
+
+  .horizon {
+    margin-right: 20px;
+  }
+
+  nav ul {
+    padding: 0;
   }
 }
 
@@ -528,7 +540,7 @@ nav span {
   }
 
   nav span {
-    bottom: unset;
+    bottom: -70px;
     margin-top: 100%;
     font-size: smaller;
   }
