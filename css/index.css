@@ -479,6 +479,10 @@ nav span {
   .gate img {
     width: 250px;
   }
+
+  .gate h1 {
+    font-size: 1rem;
+  }
   
   aside {
     justify-content: space-around;
@@ -487,15 +491,18 @@ nav span {
   .poem {
     display: flex;
     height: fit-content;
+    width: fit-content;
     margin: auto 0 0 20px;
     flex-direction: row;
 
-    transform: rotate(180deg);
+    transform: rotate(180deg) translateX(1);
   }
 
   .poem .glitch {
     writing-mode: vertical-rl;
     text-orientation:sideways-right;
+
+    transform: rotate(180deg);
   }
 
   .horizon {
@@ -504,6 +511,14 @@ nav span {
 
   nav ul {
     padding: 0;
+  }
+
+  nav ul li {
+    padding: 0;
+  }
+
+  nav span {
+    bottom: -50px;
   }
 }
 
