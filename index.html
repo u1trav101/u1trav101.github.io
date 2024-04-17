@@ -56,19 +56,27 @@
     const gateImage = document.getElementById("gate-image");
     const gateCaption = document.getElementById("gate-caption");
     const marqueeText = document.getElementById("marquee-text");
+    let marqueeAnimation;
+
+    const flip = () => {
+        console.log("hi");
+        gateImage.classList.toggle("image-flipped");
+        gateCaption.classList.toggle("caption-flipped");
+        marqueeAnimation.reverse();
+    }
 
     const gateHover = () => {
         gateImage.setAttribute("src", "img/gallery/gate.webp");
-        gateImage.classList.toggle("image-flipped");
-        gateCaption.classList.toggle("caption-flipped");
-        marqueeText.getAnimations()[0].reverse();
+        flip();
     }
 
     const gateUnhover = () => {
         gateImage.setAttribute("src", "img/gallery/gate-unedited.webp");
-        gateImage.classList.toggle("image-flipped");
-        gateCaption.classList.toggle("caption-flipped");
-        marqueeText.getAnimations()[0].reverse();
+        flip();
+    }
+
+    window.onload = () => {
+        marqueeAnimation = marqueeText.getAnimations()[0];
     }
 </script>
 </html>
