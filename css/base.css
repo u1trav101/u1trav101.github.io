@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: "junicode-italic";
-    src: url("../ttf/junicode_italic.ttf") format("truetype");
+    font-family: "eb-garamond-italic";
+    src: url("../ttf/eb_garamond_italic.ttf") format("truetype");
 }
 
 html {
