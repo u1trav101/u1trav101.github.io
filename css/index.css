@@ -26,12 +26,12 @@ main section {
   margin: 0;
 }
 
-.heroin {
+.nudesign {
   display: flex;
   height: 100%;
 }
 
-.heroin h3 {
+.nudesign h3 {
   margin: 100px 0 auto 150px;
   width: fit-content;
   font-size: 4rem;
@@ -377,7 +377,7 @@ nav span {
     margin: 0 0 0 50px;
   }
 
-  .heroin h3 {
+  .nudesign h3 {
     font-size: 3rem;
   }
 }
@@ -402,7 +402,7 @@ nav span {
     justify-content: unset;
   }
 
-  .heroin, aside {
+  .nudesign, aside {
     height: unset;
   }
 
@@ -450,7 +450,7 @@ nav span {
     width: 200px;
   }
 
-  .heroin h3 {
+  .nudesign h3 {
     writing-mode: vertical-lr;
     text-orientation: sideways-right;
     margin: 80px 0 0 50px;
@@ -472,7 +472,7 @@ nav span {
 }
 
 @media only screen and (max-width: 600px) {
-  .heroin h3 {
+  .nudesign h3 {
     margin: 40px 0 0;
   }
 
@@ -527,12 +527,12 @@ nav span {
     text-align: right;
   }
 
-  .heroin h3, .poem .glitch {
+  .nudesign h3, .poem .glitch {
     writing-mode: unset;
     text-orientation: unset;
   }
 
-  .heroin h3 {
+  .nudesign h3 {
     font-size: 2rem;
     margin: 20px 0 20px auto;
   }
