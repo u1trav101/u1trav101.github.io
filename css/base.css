@@ -10,6 +10,9 @@
 
 html {
     background-color: #18012D;
+    background-image: url("../img/bg.gif");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 html, body {
