@@ -26,6 +26,8 @@ body {
 
 main {
     position: absolute;
+    margin-top: 20px;
+    width: 100%;
 }
 
 a {
@@ -46,4 +48,8 @@ a {
     width: 100vw;
     top: 0;
     left: 0;
+}
+
+.return {
+    margin-left: 20px;
 }
