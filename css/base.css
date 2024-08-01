@@ -38,6 +38,10 @@ a {
     border-bottom: 1px solid #fefefe;
 }
 
+a:hover {
+    color: grey;
+}
+
 .bg {
     background: url("../img/bg.webp");
     background-position: center;
