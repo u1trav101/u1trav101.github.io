@@ -1,4 +1,6 @@
 source "https://rubygems.org"
 
 gem "jekyll"
-gem 'jekyll-postcss'
+gem "jekyll-minifier"
+gem "jekyll-postcss"
+gem "uglifier"
