@@ -1,0 +1,10 @@
+source:
+    ./src
+plugins:
+    - jekyll-minifier
+    - jekyll-postcss
+jekyll-minifier:
+    exclude: "*.css"
+    compress_css: false
+    uglifier_args:
+        harmony: true

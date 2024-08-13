@@ -1,13 +1,10 @@
+---
+---
+
 main {
     height: 80%;
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
-    width: 100%;
-}
-
-.return {
-    margin-left: 20px;
 }
 
 main section {
@@ -30,6 +27,8 @@ span {
 }
 
 li {
+    padding: 10px 0;
+
     list-style: none;
 }
 
