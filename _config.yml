@@ -1,2 +1,4 @@
+source:
+    ./src
 plugins:
-  - jekyll-postcss
+    - jekyll-postcss
