@@ -8,3 +8,4 @@ jekyll-minifier:
     compress_css: false
     uglifier_args:
         harmony: true
+theme: null
