@@ -47,6 +47,10 @@ a:hover {
     color: grey;
 }
 
+.hidden {
+    display: none;
+}
+
 .bg {
     background: url("../img/bg.webp");
     background-position: center;

@@ -18,6 +18,15 @@ img {
 	border: 1px solid grey;
 }
 
+.webring {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+	z-index: 50;
+}
+
 .gate {
 	margin: 100px 0 0 100px;
 	width: fit-content;
