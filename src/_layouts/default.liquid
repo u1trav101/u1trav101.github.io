@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="{{ page.description }}">
+        <link rel="stylesheet" href="/css/base.css">
+        {% for css in page.deferred_css %}
+            <link rel="stylesheet" href="/css/{{ css }}">
+        {% endfor %}
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/180px.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="canonical" href="{{ layout.url | append: page.slug }}">
+        {% if page.slug == "index" %}
+            <title>u1trav101et</title>
+        {% elsif page.title %}
+            <title>u1trav101et - {{ page.title }}</title>
+        {% else %}
+            <title>u1trav101et - {{ page.slug }}</title>
+        {% endif %}
+    </head>
+    <body>
+        <div class="bg"></div>
+        <main>
+            {% if page.slug != "index" %}
+                <h1 class="return">
+                    {% if page.return %}
+                        <a href="{{ page.return }}">&lt;-- return</a>
+                    {% else %}
+                        <a href="/">&lt;-- return</a>
+                    {% endif %}
+                </h1>
+            {% endif %}
+            {{ content }}
+        </main>
+    </body>
+    {% if page.inline_js %}
+        <script>
+            {% for filename in page.inline_js %}
+                {% include js/inline/{{ filename }} %}
+            {% endfor %}
+        </script>
+    {% endif %}
+    {% for filename in page.deferred_js %}
+        <script src="/js/{{ filename }}"></script>
+    {% endfor %}
+</html>
