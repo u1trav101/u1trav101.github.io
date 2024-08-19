@@ -32,8 +32,10 @@ h1 {
 }
 
 p {
-    margin: 20px 25px;
+    margin: 0 25px 20px;
     height: 100%;
+
+    line-height: 200%;
 }
 
 [contenteditable] {

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ page.description }}">
+    <link rel="stylesheet" href="/css/notes.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/180px.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="canonical" href="https://u1trav101.net/writings/{{ page.slug }}">
+    <title>u1trav101et - {{ page.title | downcase }}</title>
+</head>
+<body>
+    <nav class="flex-horizontal">
+        <a href="/writings" class="flex-horizontal">
+            <img src="/img/chevron-left.svg" alt="return">
+            Writings
+        </a>
+        <div class="right flex-horizontal">
+            <a href="#">
+                <img class="share" id="share" src="/img/share.svg" alt="share">
+            </a>
+            <a href="#" class="more flex-horizontal">
+                <img src="/img/circle.svg" alt="more">
+                <img class="dots" src="/img/more-horizontal.svg" alt="more">
+            </a>
+        </div>
+    </nav>
+    <span class="date">{{ page.date | date: "%d %b %Y at %H:%M" }}</span>
+    {{ content  | newline_to_br }}
+</body>
+<script>
+    {% include js/inline/notes.js %}
+</script>
+</html>

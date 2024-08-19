@@ -3,9 +3,19 @@ source:
 plugins:
     - jekyll-minifier
     - jekyll-postcss
+collections:
+    writings:
+        output: true
+        permalink: /:collection/:name
+defaults:
+    - scope:
+        type: "writings"
+      values:
+        layout: "writings"
+theme: null
+url: "https://u1trav101.net"
 jekyll-minifier:
     exclude: "*.css"
     compress_css: false
     uglifier_args:
         harmony: true
-theme: null
