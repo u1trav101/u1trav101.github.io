@@ -6,5 +6,11 @@
 ---
 
 <ul>
-    <a href="/writings/comets">comets - 13/04/2023</a>
+    {% for writing in site.writings reversed %}
+        <li>
+            <a href="/writings/{{ writing.slug }}">
+                {{ writing.title | downcase }} - {{ writing.date | date: "%d/%m/%Y" }}
+            </a>            
+        </li>
+    {% endfor %}
 </ul>
