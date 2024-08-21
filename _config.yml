@@ -12,6 +12,7 @@ defaults:
         type: "writings"
       values:
         layout: "writings"
+future: true
 theme: null
 url: "https://u1trav101.net"
 jekyll-minifier:
