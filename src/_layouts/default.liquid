@@ -11,13 +11,16 @@
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/180px.png">
         <link rel="manifest" href="/site.webmanifest">
-        <link rel="canonical" href="{{ layout.url | append: page.slug }}">
         {% if page.slug == "index" %}
+            <link rel="canonical" href="{{ site.url }}">
             <title>u1trav101et</title>
-        {% elsif page.title %}
-            <title>u1trav101et - {{ page.title }}</title>
         {% else %}
-            <title>u1trav101et - {{ page.slug }}</title>
+            <link rel="canonical" href="{{ site.url }}/{{ page.slug }}">
+            {% if page.title %}
+                <title>u1trav101et - {{ page.title }}</title>
+            {% else %}
+                <title>u1trav101et - {{ page.slug }}</title>
+            {% endif %}
         {% endif %}
     </head>
     <body>
